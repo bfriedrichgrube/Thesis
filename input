@@ -1,0 +1,35 @@
+##input file
+FILE= IPF_mapDIA_input.tsv
+LEVEL=2
+LOG2_TRANSFORMATION =false
+
+### Experimental design
+EXPERIMENTAL_DESIGN= IndependentDesign
+
+### Filter
+SDF= 2
+MIN_CORREL= 0.2
+MIN_OBS = 2 2   #if using independent design
+MIN_FRAG_PER_PEP = 3
+MAX_FRAG_PER_PEP = 6
+MIN_PEP_PER_PROT = 2
+
+
+### Sample information
+LABELS=HRD non_HRD
+SIZE=54 44   #if using independent design
+
+
+### min. max. DE
+MIN_DE= .01
+MAX_DE =.99
+
+
+### Contrast matrix for group comparison
+CONTRAST=
+- 1
+0 - 
+
+
+### protein_level.txt
+MAX_PEP_PER_PROT = 3
